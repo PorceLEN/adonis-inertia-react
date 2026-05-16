@@ -1,0 +1,33 @@
+.navbar {
+  height: 10vh;
+  width: 100%;
+  background: brown;
+
+  .container-navbar,
+  .left-navbar,
+  .logo-navbar,
+  .right-navbar,
+  .auth-navbar {
+    height: inherit;
+  }
+
+  a,
+  img {
+    height: inherit;
+  }
+
+  .container-navbar {
+    display: grid;
+    margin: 0 3rem;
+    grid-template-columns: 33% 34% 33%;
+  }
+
+  .right-navbar {
+    .auth-navbar {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+}
