@@ -1,6 +1,7 @@
 /* NAVBAR */
 
+@import url("./global/font.css");
 @import url("./variables.css");
 @import url("./global.css");
-@import url("./global/global_button.css");
+@import url("./global/global-button.css");
 @import url("./navbar.css");

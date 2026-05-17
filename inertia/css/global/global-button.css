@@ -1,0 +1,22 @@
+.global-button {
+    border: 1px solid var(--blue-master-pro);
+    width: 30%;
+    margin: 0 1rem;
+    
+    a {
+            padding: 0.5rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.7rem;
+            text-transform: uppercase;
+            transition: 0.3s ease;
+
+            &:hover {
+                background: var(--blue-master-pro);
+                color: white;
+            }
+        }
+}

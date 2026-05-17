@@ -1,8 +1,8 @@
 import { Data } from '@generated/data'
 import { Link, Form } from '@adonisjs/inertia/react'
-import logo from "../../assets/master.png"
+import logo from '../../assets/master.png'
 
-export default function Navbar({ user }: { user: Data.SharedProps["user"] }) {
+export default function Navbar({ user }: { user: Data.SharedProps['user'] }) {
   return (
     <nav className="navbar">
       <div className="container-navbar">
@@ -13,7 +13,7 @@ export default function Navbar({ user }: { user: Data.SharedProps["user"] }) {
             </Link>
           </div>
         </div>
-        <div className='empty-navbar'></div>
+        <div className="center-navbar"></div>
         <div className="right-navbar">
           <div className="auth-navbar">
             {user ? (
@@ -39,3 +39,5 @@ export default function Navbar({ user }: { user: Data.SharedProps["user"] }) {
     </nav>
   )
 }
+
+
