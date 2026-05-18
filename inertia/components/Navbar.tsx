@@ -1,6 +1,7 @@
 import { Data } from '@generated/data'
 import { Link, Form } from '@adonisjs/inertia/react'
 import logo from '../../assets/master.png'
+import Button from './Button'
 
 export default function Navbar({ user }: { user: Data.SharedProps['user'] }) {
   return (
@@ -23,18 +24,12 @@ export default function Navbar({ user }: { user: Data.SharedProps['user'] }) {
               </>
             ) : (
               <>
-                <div className="global-button">
-                  <Link route="new_account.create">Register</Link>
-                </div>
-                <div className="global-button">
-                  <Link className="global_button" route="session.create">
-                    Login
-                  </Link>
-                </div>
+                <Button route="new_account.create">register</Button>
+                <Button route="session.create" >login</Button>
               </>
             )}
           </div>
-        </div>
+        </div> 
       </div>
     </nav>
   )
