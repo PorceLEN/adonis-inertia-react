@@ -2,11 +2,15 @@
   height: 10vh;
   width: 100%;
 
+  /* not touch */
+
   .container-navbar,
   .left-navbar,
+  .center-navbar,
   .logo-navbar,
   .right-navbar,
   .auth-navbar,
+  .menu-navbar,
   a,
   img {
     height: inherit;
@@ -15,11 +19,35 @@
   .container-navbar {
     display: grid;
     margin: 0 3rem;
-    grid-template-columns: 33% 34% 33%;
-  }
+    grid-template-columns: 20% 55% 25%;
 
-  .right-navbar {
-    .auth-navbar {
+    .left-navbar {}
+
+    .center-navbar {}
+
+    .right-navbar {}
+
+    .center-navbar > .menu-navbar {
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .menu-navbar > .option-menu-navbar {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      font-size: var(--font-size-navbar);
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        color: var(--blue-master-pro);
+      }
+    }
+
+    .right-navbar > .auth-navbar {
       display: flex;
       justify-content: end;
       align-items: center;

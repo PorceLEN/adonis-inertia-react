@@ -1,7 +1,7 @@
 import { Data } from '@generated/data'
 import { Link, Form } from '@adonisjs/inertia/react'
 import logo from '../../assets/master.png'
-import Button from './Button'
+import LinkButton from './global/LinkButton.global'
 
 export default function Navbar({ user }: { user: Data.SharedProps['user'] }) {
   return (
@@ -14,7 +14,14 @@ export default function Navbar({ user }: { user: Data.SharedProps['user'] }) {
             </Link>
           </div>
         </div>
-        <div className="center-navbar"></div>
+        <div className="center-navbar">
+          <ul className="menu-navbar">
+            <li className="option-menu-navbar">Nos produits</li>
+            <li className="option-menu-navbar">Nos catalogues</li>
+            <li className="option-menu-navbar">Les promotions</li>
+            <li className="option-menu-navbar">Nous contacter</li>
+          </ul>
+        </div>
         <div className="right-navbar">
           <div className="auth-navbar">
             {user ? (
@@ -24,15 +31,13 @@ export default function Navbar({ user }: { user: Data.SharedProps['user'] }) {
               </>
             ) : (
               <>
-                <Button route="new_account.create">register</Button>
-                <Button route="session.create" >login</Button>
+                <LinkButton route="new_account.create">register</LinkButton>
+                <LinkButton route="session.create">login</LinkButton>
               </>
             )}
           </div>
-        </div> 
+        </div>
       </div>
     </nav>
   )
 }
-
-

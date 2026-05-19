@@ -1,6 +1,6 @@
 .global-button {
     border: 1px solid var(--blue-master-pro);
-    width: 30%;
+    width: 15rem;
     margin: 0 1rem;
     
     a {
@@ -20,3 +20,5 @@
             }
         }
 }
+
+/* vérifier bouton */
