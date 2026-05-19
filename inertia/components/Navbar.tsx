@@ -27,12 +27,12 @@ export default function Navbar({ user }: { user: Data.SharedProps['user'] }) {
             {user ? (
               <>
                 <span>{user.initials}</span>
-                <Form route="session.destroy">Logout</Form>
+                <Form route="session.destroy">Se déconnecter</Form>
               </>
             ) : (
               <>
-                <LinkButton route="new_account.create">register</LinkButton>
-                <LinkButton route="session.create">login</LinkButton>
+                <LinkButton route="new_account.create">S'enregistrer</LinkButton>
+                <LinkButton route="session.create">Se connecter</LinkButton>
               </>
             )}
           </div>

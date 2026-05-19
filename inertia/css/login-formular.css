@@ -1,0 +1,9 @@
+.form-container {
+    height: 90vh;
+
+    Form {
+        height: 50px;
+        width: 100rem;
+        background: red;
+    }
+}

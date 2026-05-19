@@ -18,19 +18,22 @@
 
   .container-navbar {
     display: grid;
-    margin: 0 3rem;
     grid-template-columns: 20% 55% 25%;
+    margin: 0 3rem;
+  }
 
-    .left-navbar {}
+    .left-navbar {
+    }
 
-    .center-navbar {}
+    .center-navbar {
+    }
 
-    .right-navbar {}
+    .right-navbar {
+    }
 
     .center-navbar > .menu-navbar {
       display: grid;
-      gap: 3rem;
-      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 
     .menu-navbar > .option-menu-navbar {
@@ -39,11 +42,27 @@
       text-transform: uppercase;
       font-size: var(--font-size-navbar);
       font-weight: bold;
+      position: relative;
+      justify-content: center;
+      cursor: pointer;
 
       &:hover {
-        text-decoration: underline;
-        cursor: pointer;
         color: var(--blue-master-pro);
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 0;
+        background: var(--blue-master-pro);
+        transition: 0.5s;
+      }
+
+      &:hover:before {
+        width: 100%;
       }
     }
 
@@ -54,4 +73,4 @@
       flex-wrap: wrap;
     }
   }
-}
+

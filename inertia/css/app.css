@@ -1,7 +1,14 @@
-/* NAVBAR */
+/* GLOBAL CSS */
 
 @import url("./global/font.css");
 @import url("./variables.css");
 @import url("./global.css");
+
+/* NAVBAR */
+
 @import url("./global/global-button.css");
 @import url("./navbar.css");
+
+/* LOGIN FORMULAR */
+
+@import url("./login-formular.css")
