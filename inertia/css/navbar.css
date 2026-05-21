@@ -1,5 +1,5 @@
 .navbar {
-  height: 10vh;
+  height: 8vh;
   width: 100%;
 
   /* not touch */
@@ -39,8 +39,7 @@
     .menu-navbar > .option-menu-navbar {
       display: flex;
       align-items: center;
-      text-transform: uppercase;
-      font-size: var(--font-size-navbar);
+      font-size: var(--font-size-global);
       font-weight: bold;
       position: relative;
       justify-content: center;

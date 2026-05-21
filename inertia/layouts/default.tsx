@@ -3,7 +3,7 @@ import { toast, Toaster } from 'sonner'
 import { usePage } from '@inertiajs/react'
 import { ReactElement, useEffect } from 'react'
 import Navbar from '~/components/Navbar'
-import LinkButton from '~/components/global/LinkButton.global'
+import LinkButton from '~/components/global/Buttons.global'
 
 export default function Layout({ children }: { children: ReactElement<Data.SharedProps> }) {
   useEffect(() => {

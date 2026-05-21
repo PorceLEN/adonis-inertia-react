@@ -6,7 +6,7 @@ type LinkButtonProps = {
   route: Routes
 }
 
-export default function LinkButton({ children, route }: LinkButtonProps) {
+export function LinkButton({ children, route }: LinkButtonProps) {
   return (
     <>
       <div className="global-button">

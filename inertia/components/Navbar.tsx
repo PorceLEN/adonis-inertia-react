@@ -1,7 +1,7 @@
 import { Data } from '@generated/data'
 import { Link, Form } from '@adonisjs/inertia/react'
 import logo from '../../assets/master.png'
-import LinkButton from './global/LinkButton.global'
+import { LinkButton } from './global/Buttons.global'
 
 export default function Navbar({ user }: { user: Data.SharedProps['user'] }) {
   return (

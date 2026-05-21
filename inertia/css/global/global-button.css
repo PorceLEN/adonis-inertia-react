@@ -1,24 +1,19 @@
 .global-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid var(--blue-master-pro);
     width: 15rem;
     margin: 0 1rem;
+    padding: 0.5rem;
+    font-size: var(--font-size-global);
+    transition: 0.3s ease;
+    cursor: pointer;
     
-    a {
-            padding: 0.5rem;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-            font-size: 1.7rem;
-            text-transform: uppercase;
-            transition: 0.3s ease;
-
-            &:hover {
-                background: var(--blue-master-pro);
-                color: white;
-            }
-        }
+    &:hover {
+        background: var(--blue-master-pro);
+        color: white;
+    }
 }
 
 /* vérifier bouton */
