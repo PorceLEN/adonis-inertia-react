@@ -1,6 +1,7 @@
 .navbar {
   height: 8vh;
   width: 100%;
+  box-shadow: var(--navbar-shadow);
 
   /* not touch */
 
